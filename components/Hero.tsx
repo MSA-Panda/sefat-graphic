@@ -26,30 +26,30 @@ const Hero: React.FC = () => {
         <div className="absolute -top-10 -right-20 w-64 h-64 bg-brand-blue/10 blur-3xl rounded-full animate-pulse"></div>
         <div className="absolute top-1/2 -left-32 w-80 h-80 bg-brand-orange/10 blur-3xl rounded-full opacity-30 animate-float"></div>
 
-        <div className="glass-card p-8 md:p-16 lg:p-24 rounded-[3rem] backdrop-blur-3xl border-white/30 dark:border-white/5 shadow-2xl relative overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/5 to-transparent opacity-50 group-hover:opacity-100 transition-opacity"></div>
+        <div className="glass-card p-8 md:p-16 lg:p-24 rounded-[3rem] backdrop-blur-3xl border-white/40 dark:border-white/5 shadow-2xl relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/5 to-white/10 opacity-50 group-hover:opacity-100 transition-opacity"></div>
           
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-blue/10 border border-brand-blue/20 text-brand-blue dark:text-brand-blue text-sm font-medium mb-12 animate-bounce">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-white dark:bg-brand-blue/10 border border-brand-blue/20 text-brand-blue text-sm font-bold mb-12 animate-bounce shadow-sm">
             <Sparkles size={16} />
             Elevating Brand Visuals
           </div>
 
-          {/* Logo Replacement for H1 - Increased Size */}
+          {/* Logo Replacement for H1 - High-End Presentation */}
           <div className="mb-10 flex justify-center">
             <img 
               src="logo.png" 
               alt="SEFAT GRAPHICS" 
-              className="w-full max-w-[550px] md:max-w-[700px] h-auto drop-shadow-[0_20px_60px_rgba(0,163,255,0.4)] animate-float"
+              className="w-full max-w-[550px] md:max-w-[700px] h-auto drop-shadow-[0_20px_60px_rgba(0,127,255,0.4)] animate-float"
               style={{ animationDuration: '4.5s' }}
             />
           </div>
 
-          <h2 className="text-xl md:text-3xl font-semibold text-slate-700 dark:text-slate-200 mb-6 font-sans tracking-tight">
+          <h2 className="text-xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 mb-6 font-sans tracking-tight">
             Anime T-Shirt Designer & Creative Visual Artist
           </h2>
 
-          <p className="max-w-xl mx-auto text-lg text-slate-500 dark:text-slate-400 mb-12 font-light leading-relaxed">
-            I design high-impact visuals and anime streetwear that turn creative ideas into recognizable identity.
+          <p className="max-w-xl mx-auto text-lg text-slate-600 dark:text-slate-400 mb-12 font-light leading-relaxed">
+            Transforming creative concepts into iconic streetwear and brand identities.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -57,28 +57,28 @@ const Hero: React.FC = () => {
               href="https://www.behance.net/mohammesefata"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-2xl font-semibold text-lg flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-brand-blue/20 border-b-4 border-brand-blue dark:border-brand-blue"
+              className="px-10 py-5 bg-brand-blue text-white rounded-2xl font-bold text-lg flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-blue/20 border-b-4 border-brand-orange"
             >
               View My Works
               <ArrowRight size={20} />
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 glass-card rounded-2xl font-semibold text-lg hover:bg-white/20 dark:hover:bg-white/5 transition-all flex items-center gap-2 border-b-4 border-brand-orange/50"
+              className="px-10 py-5 bg-brand-white dark:bg-white/5 text-slate-900 dark:text-white glass-card rounded-2xl font-bold text-lg hover:bg-white transition-all flex items-center gap-2 border-b-4 border-brand-blue/30"
             >
               Contact Me
             </a>
           </div>
         </div>
 
-        {/* Decorative elements matching logo style */}
+        {/* Decorative sliding text footer */}
         <div className="mt-16 relative w-full h-24 overflow-hidden">
-          <div className="flex items-center justify-center gap-12 opacity-20 grayscale hover:grayscale-0 transition-all cursor-default select-none whitespace-nowrap animate-pulse">
-            <span className="text-4xl font-bold tracking-[0.5em] text-brand-blue">STREETWEAR</span>
+          <div className="flex items-center justify-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all cursor-default select-none whitespace-nowrap animate-pulse">
+            <span className="text-4xl font-extrabold tracking-[0.5em] text-brand-blue">STREETWEAR</span>
             <div className="w-2 h-2 rounded-full bg-brand-orange"></div>
-            <span className="text-4xl font-bold tracking-[0.5em] text-brand-blue">IDENTITY</span>
+            <span className="text-4xl font-extrabold tracking-[0.5em] text-brand-blue">IDENTITY</span>
             <div className="w-2 h-2 rounded-full bg-brand-orange"></div>
-            <span className="text-4xl font-bold tracking-[0.5em] text-brand-blue">CREATIVE</span>
+            <span className="text-4xl font-extrabold tracking-[0.5em] text-brand-blue">CREATIVE</span>
           </div>
         </div>
       </div>

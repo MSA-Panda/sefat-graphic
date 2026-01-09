@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Send, Facebook, Instagram, Github, ArrowUpRight } from 'lucide-react';
+import { Mail, Send, Facebook, Instagram, Github } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -9,15 +9,15 @@ const Contact: React.FC = () => {
         
         {/* Left: Info */}
         <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Let's build <br /> something <span className="text-blue-500">epic.</span></h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Let's build <br /> something <span className="text-brand-blue">epic.</span></h2>
           <p className="text-slate-500 dark:text-slate-400 text-lg font-light mb-12">
             Ready to bring your anime visual identity to life? Drop a message and let's discuss your next project.
           </p>
 
           <div className="space-y-6">
             <div className="flex items-center gap-6 group">
-              <div className="p-4 glass-card rounded-2xl group-hover:bg-blue-500/10 transition-colors">
-                <Mail className="text-blue-500" size={24} />
+              <div className="p-4 glass-card rounded-2xl group-hover:bg-brand-blue/10 transition-colors">
+                <Mail className="text-brand-blue" size={24} />
               </div>
               <div>
                 <div className="text-sm font-bold text-slate-400 uppercase tracking-widest">Email Me</div>
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
                 <a 
                   key={idx} 
                   href="#" 
-                  className="p-4 glass-card rounded-2xl text-slate-600 dark:text-slate-300 hover:text-blue-500 hover:translate-y-[-4px] transition-all"
+                  className={`p-4 glass-card rounded-2xl text-slate-600 dark:text-slate-300 hover:text-white transition-all hover:translate-y-[-4px] ${idx % 2 === 0 ? 'hover:bg-brand-blue' : 'hover:bg-brand-orange'}`}
                 >
                   <Icon size={24} />
                 </a>
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
               <input 
                 type="text" 
                 placeholder="John Doe"
-                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500/50 outline-none focus:ring-4 focus:ring-blue-500/10 transition-all"
+                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-brand-blue outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all"
               />
             </div>
             
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
               <input 
                 type="email" 
                 placeholder="john@example.com"
-                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500/50 outline-none focus:ring-4 focus:ring-blue-500/10 transition-all"
+                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-brand-blue outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all"
               />
             </div>
 
@@ -68,11 +68,11 @@ const Contact: React.FC = () => {
               <textarea 
                 rows={4}
                 placeholder="Tell me about your project..."
-                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500/50 outline-none focus:ring-4 focus:ring-blue-500/10 transition-all resize-none"
+                className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-brand-blue outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all resize-none"
               ></textarea>
             </div>
 
-            <button className="w-full py-5 bg-blue-600 text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-blue-700 transition-all group shadow-xl shadow-blue-500/20 active:scale-95">
+            <button className="w-full py-5 bg-brand-blue text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-brand-dark transition-all group shadow-xl shadow-brand-blue/20 active:scale-95 border-b-4 border-brand-orange">
               Send Message
               <Send size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>

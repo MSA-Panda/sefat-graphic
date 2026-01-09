@@ -15,7 +15,7 @@ const Tools: React.FC = () => {
     <section className="py-24 overflow-hidden">
       <div className="max-w-6xl mx-auto mb-12 text-center">
          <h3 className="text-sm font-bold tracking-[0.2em] uppercase text-slate-400 mb-2">Workspace & Tools</h3>
-         <div className="w-20 h-0.5 bg-blue-500/30 mx-auto"></div>
+         <div className="w-20 h-0.5 bg-brand-orange mx-auto"></div>
       </div>
       
       <div className="glass-card py-10 flex items-center justify-around flex-wrap gap-8 backdrop-blur-md border-y border-white/10">

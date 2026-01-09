@@ -4,32 +4,32 @@ import { Shirt, Palette, Layout, Terminal, ShieldCheck, Zap } from 'lucide-react
 
 const skills = [
   {
-    icon: <Shirt className="text-blue-500" size={32} />,
+    icon: <Shirt className="text-brand-blue" size={32} />,
     name: "Anime T-Shirt Design",
     desc: "Creating unique, wearable anime illustrations that resonate with the community."
   },
   {
-    icon: <Palette className="text-violet-500" size={32} />,
+    icon: <Palette className="text-brand-orange" size={32} />,
     name: "Graphic Design",
     desc: "Mastering layout, color theory, and typography for diverse visual projects."
   },
   {
-    icon: <Zap className="text-cyan-500" size={32} />,
+    icon: <Zap className="text-brand-blue" size={32} />,
     name: "Adobe Photoshop",
     desc: "Advanced photo manipulation and digital illustration for high-end results."
   },
   {
-    icon: <Terminal className="text-emerald-500" size={32} />,
+    icon: <Terminal className="text-brand-orange" size={32} />,
     name: "Basic HTML & CSS",
     desc: "Constructing the digital foundation for creative web experiences."
   },
   {
-    icon: <ShieldCheck className="text-blue-500" size={32} />,
+    icon: <ShieldCheck className="text-brand-blue" size={32} />,
     name: "Creative Branding",
     desc: "Developing cohesive visual identities that tell a powerful story."
   },
   {
-    icon: <Layout className="text-orange-500" size={32} />,
+    icon: <Layout className="text-brand-orange" size={32} />,
     name: "UI/UX Awareness",
     desc: "Designing with the end-user in mind for a seamless visual flow."
   }
@@ -49,10 +49,9 @@ const Skills: React.FC = () => {
         {skills.map((skill, index) => (
           <div 
             key={index}
-            className="glass-card p-8 rounded-3xl group hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300 relative overflow-hidden"
+            className="glass-card p-8 rounded-3xl group hover:translate-y-[-8px] hover:shadow-2xl hover:shadow-brand-blue/10 transition-all duration-300 relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:scale-150 transition-transform duration-500">
-               {/* Added <any> to React.ReactElement to resolve Type 'unknown' error for 'size' property */}
                {React.cloneElement(skill.icon as React.ReactElement<any>, { size: 120 })}
             </div>
             
@@ -66,7 +65,7 @@ const Skills: React.FC = () => {
               </p>
             </div>
             
-            <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-transparent w-0 group-hover:w-full transition-all duration-500"></div>
+            <div className={`absolute bottom-0 left-0 h-1 bg-gradient-to-r ${index % 2 === 0 ? 'from-brand-blue' : 'from-brand-orange'} to-transparent w-0 group-hover:w-full transition-all duration-500`}></div>
           </div>
         ))}
       </div>

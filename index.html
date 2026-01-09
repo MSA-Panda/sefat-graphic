@@ -19,19 +19,20 @@
             },
             colors: {
               glass: {
-                light: 'rgba(255, 255, 255, 0.15)',
-                dark: 'rgba(0, 0, 0, 0.25)',
+                light: 'rgba(255, 255, 255, 0.25)',
+                dark: 'rgba(15, 23, 42, 0.25)',
               },
               brand: {
-                blue: '#00A3FF',
-                orange: '#FF6B00',
-                dark: '#005BBF',
+                blue: '#007FFF',
+                orange: '#FF6600',
+                white: '#FFFFFF',
+                dark: '#0059B2',
               },
               accent: {
                 blue: '#E0F2FE',
                 violet: '#F5F3FF',
                 cyan: '#ECFEFF',
-                glow: '#3B82F6',
+                glow: '#007FFF',
               }
             },
             backdropBlur: {
@@ -59,22 +60,22 @@
         -webkit-font-smoothing: antialiased;
       }
       .glass-card {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.2); /* Increased white opacity for white-theme emphasis */
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(0, 127, 255, 0.05);
       }
       .dark .glass-card {
-        background: rgba(17, 24, 39, 0.2);
+        background: rgba(17, 24, 39, 0.3);
         border: 1px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
       }
       .gradient-bg {
-        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e0f2fe 100%);
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
       }
       .dark .gradient-bg {
-        background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #020617 100%);
+        background: linear-gradient(135deg, #0f172a 0%, #0c1a3a 50%, #020617 100%);
       }
       .mesh-gradient {
         position: fixed;
@@ -87,7 +88,7 @@
         position: absolute;
         filter: blur(80px);
         border-radius: 50%;
-        opacity: 0.4;
+        opacity: 0.25;
       }
       @keyframes morph {
         0%, 100% { border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%; }
@@ -101,14 +102,14 @@
         background: transparent;
       }
       ::-webkit-scrollbar-thumb {
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 127, 255, 0.2);
         border-radius: 10px;
       }
       .dark ::-webkit-scrollbar-thumb {
         background: rgba(255, 255, 255, 0.1);
       }
       .brand-text-gradient {
-        background: linear-gradient(to right, #00A3FF, #FF6B00);
+        background: linear-gradient(to right, #007FFF, #FF6600);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

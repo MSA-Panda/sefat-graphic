@@ -6,11 +6,12 @@ const Footer: React.FC = () => {
     <footer className="py-12 border-t border-white/10 mt-12 bg-white/5 backdrop-blur-3xl">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start">
-          <div className="flex items-center gap-3 mb-4">
-             <img src="logo.png" alt="Logo" className="h-12 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all" />
-             <div className="text-2xl font-extrabold tracking-tighter">
-               SEFAT <span className="font-light text-slate-500">GRAPHICS</span>
-             </div>
+          <div className="mb-4">
+             <img 
+               src="logo.png" 
+               alt="SEFAT GRAPHICS" 
+               className="h-16 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" 
+             />
           </div>
           <p className="text-slate-500 text-sm font-light">
             © {new Date().getFullYear()} Sefat Graphics. All rights reserved.

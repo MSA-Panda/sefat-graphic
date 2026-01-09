@@ -25,12 +25,12 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="relative min-h-screen selection:bg-blue-200 dark:selection:bg-blue-900">
+      <div className="relative min-h-screen selection:bg-brand-blue selection:text-white">
         {/* Animated Mesh Background blobs */}
         <div className="mesh-gradient pointer-events-none">
-          <div className="mesh-blob bg-blue-400 w-[500px] h-[500px] -top-20 -left-20 animate-pulse-slow"></div>
-          <div className="mesh-blob bg-violet-400 w-[600px] h-[600px] top-1/2 -right-20 animate-float opacity-30"></div>
-          <div className="mesh-blob bg-cyan-300 w-[400px] h-[400px] bottom-10 left-1/4 animate-pulse opacity-20"></div>
+          <div className="mesh-blob bg-brand-blue w-[500px] h-[500px] -top-20 -left-20 animate-pulse-slow"></div>
+          <div className="mesh-blob bg-brand-orange w-[600px] h-[600px] top-1/2 -right-20 animate-float opacity-20"></div>
+          <div className="mesh-blob bg-brand-white w-[400px] h-[400px] bottom-10 left-1/4 animate-pulse opacity-10 dark:opacity-5"></div>
         </div>
 
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
