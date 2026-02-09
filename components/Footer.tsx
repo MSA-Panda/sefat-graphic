@@ -7,11 +7,13 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start">
           <div className="mb-4">
-             <img 
-               src="logo.png" 
-               alt="SEFAT GRAPHICS" 
-               className="h-16 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" 
-             />
+             <a href="#home">
+               <img 
+                 src="logo.png" 
+                 alt="SEFAT GRAPHICS" 
+                 className="h-16 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" 
+               />
+             </a>
           </div>
           <p className="text-slate-500 text-sm font-light">
             © {new Date().getFullYear()} Sefat Graphics. All rights reserved.

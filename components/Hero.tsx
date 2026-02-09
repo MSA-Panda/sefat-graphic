@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
             Elevating Brand Visuals
           </div>
 
-          {/* Logo Replacement for H1 - High-End Presentation */}
+          {/* Logo Presentation - OFFICIAL LOGO */}
           <div className="mb-10 flex justify-center">
             <img 
               src="logo.png" 
@@ -52,26 +52,20 @@ const Hero: React.FC = () => {
             Transforming creative concepts into iconic streetwear and brand identities.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex items-center justify-center">
             <a
               href="https://www.behance.net/mohammesefata"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-5 bg-brand-blue text-white rounded-2xl font-bold text-lg flex items-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-brand-blue/20 border-b-4 border-brand-orange"
+              className="px-12 py-5 bg-brand-blue text-white rounded-2xl font-bold text-xl flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-brand-blue/30 border-b-4 border-brand-orange group"
             >
-              View My Works
-              <ArrowRight size={20} />
-            </a>
-            <a
-              href="#contact"
-              className="px-10 py-5 bg-brand-white dark:bg-white/5 text-slate-900 dark:text-white glass-card rounded-2xl font-bold text-lg hover:bg-white transition-all flex items-center gap-2 border-b-4 border-brand-blue/30"
-            >
-              Contact Me
+              View My Work
+              <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
 
-        {/* Decorative sliding text footer */}
+        {/* Decorative elements */}
         <div className="mt-16 relative w-full h-24 overflow-hidden">
           <div className="flex items-center justify-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all cursor-default select-none whitespace-nowrap animate-pulse">
             <span className="text-4xl font-extrabold tracking-[0.5em] text-brand-blue">STREETWEAR</span>

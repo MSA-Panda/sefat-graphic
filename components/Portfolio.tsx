@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 type Category = 'All' | 'Anime T-Shirt' | 'Graphic Design' | 'Experimental';
 
@@ -45,12 +45,9 @@ const Portfolio: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project) => (
-          <a 
+          <div 
             key={project.id}
-            href="https://www.behance.net/mohammesefata"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group glass-card rounded-[2rem] overflow-hidden aspect-[4/5] relative cursor-pointer block"
+            className="group glass-card rounded-[2rem] overflow-hidden aspect-[4/5] relative cursor-default block"
           >
             <img 
               src={project.image} 
@@ -67,27 +64,11 @@ const Portfolio: React.FC = () => {
                   <div className="p-3 bg-white/20 hover:bg-brand-blue/40 backdrop-blur-md rounded-xl text-white transition-all">
                     <Search size={20} />
                   </div>
-                  <div className="p-3 bg-white/20 hover:bg-brand-orange/40 backdrop-blur-md rounded-xl text-white transition-all">
-                    <ExternalLink size={20} />
-                  </div>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         ))}
-      </div>
-
-      {/* Primary Link to Behance */}
-      <div className="mt-16 text-center">
-        <a 
-          href="https://www.behance.net/mohammesefata" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-brand-white dark:bg-white/5 px-12 py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue hover:text-white transition-all shadow-lg border-b-4 border-brand-orange group"
-        >
-          Browse Full Portfolio on Behance
-          <ExternalLink size={20} className="inline-block ml-2 group-hover:translate-x-1 transition-transform" />
-        </a>
       </div>
     </section>
   );
